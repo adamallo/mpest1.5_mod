@@ -1,0 +1,9 @@
+Modified MPEST1.5 in order to improve the user experience
+---------------------------------------------------------
+
+Mods:
+-----
+
+-Taxa numbers are considered tags an never node ids.
+
+If you use this piece of software, please cite the original paper by Liu et al.: Liu L, Yu L, Edwards S V. 2010. A maximum pseudo-likelihood approach for estimating species trees under the coalescent model. BMC Evol. Biol. 10:302.
