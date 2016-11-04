@@ -9,7 +9,7 @@
 #include <stdarg.h>
 #include <sys/time.h>
 
-#define NTAXA         200      /* max # of species */
+#define NTAXA         260      /* max # of species */
 #define NGENE         50000      /* max # of loci */
 #define MAXROUND	10000000		/* MAX # OF ROUNDS*/
 #define NUM_NOCHANGE	20000		/* # OF ROUNDS THAT NO BIGGER LIKELIHOOD VALUES ARE FOUND*/

@@ -1024,6 +1024,7 @@ int findNameNumber (Tree *tree)
 			stop = 0;
 			for(k=0; k<totaltaxa; k++)
 			{
+				//printf("DEBUG: tree %d, node in the tree %s, taxaname to compare %s\n",i,tree[i].nodes[j].taxaname,taxanames[k]);
 				if(!strcmp(tree[i].nodes[j].taxaname, taxanames[k]))
 				{
 					stop = 1; 
@@ -1146,7 +1147,7 @@ int ReadaTree (FILE *fTree,Tree *tree)
             		printf("; in treefile");
             		exit(-1);
          	}
-      		else if (isdigit(ch))
+/*      		else if (isdigit(ch))
       		{ 
          		ungetc(ch, fTree); 
          		fscanf(fTree,"%d",&inodeb); 
@@ -1154,7 +1155,7 @@ int ReadaTree (FILE *fTree,Tree *tree)
          		tree->nodes[inodeb].father=cfather;
          		tree->nodes[cfather].sons[tree->nodes[cfather].nson++]=inodeb;
       		}
-		else if (isalpha(ch))
+*/		else //if (isalpha(ch))
 		{		
 			i = 0;
 			while(ch != ':' && ch != ',' && ch != ')')

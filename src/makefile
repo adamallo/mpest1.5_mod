@@ -1,7 +1,7 @@
 # CONFIG
 
 # Choose: mac, windows, or unix
-ARCHITECTURE ?= mac 
+ARCHITECTURE ?= unix 
 
 # Set MPI=yes for the parallel version
 MPI ?= no
@@ -49,7 +49,7 @@ else
 	CFLAGS += $(OPTFLAGS)
 endif
 
-CFLAGS   +=   -Wall -Wno-uninitialized
+CFLAGS   +=   -Wall -Wno-uninitialized -mcmodel=large
 
 LIBS      =   -lm
 
